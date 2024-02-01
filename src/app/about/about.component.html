@@ -1,0 +1,16 @@
+<section>
+    <div class="container py-5">
+        <div class="row g-5">
+            <div *ngFor="let product of allProduct" class="col-xl-3">
+                <div class="card p-4" style="width: 18rem;">
+                    <img [src]="product.img" class="card-img-top" alt="laptop 1">
+                    <div class="card-body">
+                        <h5 class="card-title">{{product.title}}</h5>
+                        <p class="card-text">{{product.description}}</p>
+                        <p class="card-text">Price: {{product.price}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,10 @@
+<section>
+    <div class="container py-5 text-center">
+        <h1 class="text-center py-5"><i class="fa-solid fa-star fa-1x text-warning"></i> Our Product <i class="fa-solid fa-star fa-1x text-warning"></i></h1>
+        <div class="row g-5">
+            <div *ngFor="let images of allImages" class="col-lg-6">
+                <img [src]="images" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
